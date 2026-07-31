@@ -1,73 +1,274 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Happy Birthday 🌸🐶</title>
+<title>Happy 18th Birthday Boudy 🌸🐶</title>
+
 <style>
+
 body {
-  background: #fff5f8;
-  text-align: center;
+  background: #fff3f8;
   font-family: "Comic Sans MS", cursive;
-  padding: 50px;
-  overflow: hidden;
+  text-align: center;
+  color: #6b3b52;
+  padding: 30px;
+  overflow-x: hidden;
 }
 
 h1 {
-  color: #d96c9a;
+  color: #d65c91;
+}
+
+h2 {
+  color: #c75b88;
 }
 
 .puppy {
-  font-size: 80px;
+  font-size: 90px;
+  animation: bounce 2s infinite;
 }
 
-.message {
+@keyframes bounce {
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.card {
   background: white;
+  max-width: 650px;
+  margin: 25px auto;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 5px 20px #ffd1e3;
+  line-height: 1.7;
+}
+
+.gifts {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+button {
+  background: #ffc7df;
+  border: none;
   border-radius: 20px;
-  padding: 20px;
-  max-width: 500px;
-  margin: auto;
-  box-shadow: 0 5px 15px #ffd1e3;
+  padding: 20px 30px;
+  font-size: 20px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.hidden {
+  display: none;
 }
 
 .petal {
-  position: absolute;
+  position: fixed;
   top: -20px;
   font-size: 25px;
-  animation: fall 5s linear infinite;
+  animation: fall 6s linear infinite;
 }
 
 @keyframes fall {
+  from {
+    transform: translateY(-20px);
+  }
   to {
-    transform: translateY(100vh);
+    transform: translateY(110vh);
   }
 }
+
+a {
+  color: #d65c91;
+  font-size: 20px;
+}
+
 </style>
+
+
+<script>
+
+function openGift(gift) {
+  document.getElementById(gift).style.display = "block";
+}
+
+</script>
+
+
 </head>
+
 
 <body>
 
-<h1>🌸 Happy Birthday, my love 🌸</h1>
 
-<div class="puppy">🐶</div>
+<h1>🌸 well hi there handsome 🌸</h1>
 
-<div class="message">
-<p>
-hi my beautiful baby.
-</p>
-
-<p>
-I made this tiny place just for you because you deserve
-all the happiness in the world. 💗
-</p>
-
-<p>
-Thank you for making the distance feel smaller.
-I love you 🌸
-</p>
+<div class="puppy">
+🐶
 </div>
 
+
+<div class="card">
+
+<p>
+my sweet boy 💕
+</p>
+
+<p>
+I know its not much but i hope u like it !
+</p>
+
+<p>
+i hope u enjoy this sweetheart 🌸
+<br>
+i love you 🐾
+</p>
+
+</div>
+
+
+
+<h1>🌸 Happy 18th Birthday Boudy 🌸</h1>
+
+<div class="card">
+
+<p>
+My beautiful baby is turning 18 🥹💕
+</p>
+
+<p>
+I hope you have the best birthday ever!!
+</p>
+
+<p>
+Pick a gift made with all my love 💗
+</p>
+
+</div>
+
+
+
+<h2>🎁 Pick a gift 🎁</h2>
+
+
+<div class="gifts">
+
+<button onclick="openGift('letter')">
+💌 Gift 1
+</button>
+
+
+<button onclick="openGift('song')">
+🎵 Gift 2
+</button>
+
+</div>
+
+
+
+
+<div id="letter" class="card hidden">
+
+<h2>💌 A letter from me</h2>
+
+
+<p>
+My beautiful baby is turning 18🥹.
+</p>
+
+
+<p>
+Hi my angel, I hope u have the best birthday ever!!
+Ever since I met u ive been happy, im so glad I have u.
+</p>
+
+
+<p>
+U are so gentle and sweet with me, I love u so much.
+I dont care what anyone says or whatever happens,
+u will always be my sweet boy.
+</p>
+
+
+<p>
+I cant appreciate u enough.
+I know this isnt much, it hurts me that ur not here with me
+so I could get u something proper and throw u a big surprise.
+</p>
+
+
+<p>
+Your friends are so lucky to be able to see u everyday
+and touch u, im jealous.
+</p>
+
+
+<p>
+Im not going to get into full emotional because I want this day
+to be the happiest day for u my pup!
+</p>
+
+
+<p>
+I love u my sweet handsome boy.
+</p>
+
+
+<p>
+Sweet 18 💕🌸
+</p>
+
+
+</div>
+
+
+
+
+
+<div id="song" class="card hidden">
+
+<h2>🎵 A song for you</h2>
+
+
+<p>
+This song reminds me of you 💕
+</p>
+
+
+<p>
+<em>No One Noticed</em>
+<br>
+The Marías 🌸
+</p>
+
+
+<p>
+I hope this song makes you think of us.
+</p>
+
+
+<a href="https://www.youtube.com/results?search_query=The+Marias+No+One+Noticed" target="_blank">
+🎧 Listen here
+</a>
+
+
+</div>
+
+
+
+
+
 <div class="petal">🌸</div>
-<div class="petal" style="left:30%; animation-delay:2s;">🌸</div>
-<div class="petal" style="left:70%; animation-delay:1s;">🌸</div>
+<div class="petal" style="left:20%; animation-delay:2s;">🌸</div>
+<div class="petal" style="left:50%; animation-delay:4s;">🌸</div>
+<div class="petal" style="left:80%; animation-delay:1s;">🌸</div>
+
 
 </body>
 </html>
