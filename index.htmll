@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>You & Me 🩷</title>
+
+<style>
+body {
+  background: #fff5f8;
+  font-family: "Comic Sans MS", cursive;
+  text-align: center;
+  color: #6b3b52;
+  padding: 30px;
+}
+
+h1, h2 {
+  color: #d65c91;
+}
+
+.card {
+  background: white;
+  max-width: 650px;
+  margin: 25px auto;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 5px 20px #ffd1e3;
+  line-height: 1.7;
+}
+
+.puppy {
+  font-size: 90px;
+  cursor: pointer;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.reason {
+  display: none;
+  font-size: 22px;
+  color: #d65c91;
+  margin-top: 20px;
+}
+
+button {
+  background: #ffc7df;
+  border: none;
+  border-radius: 20px;
+  padding: 15px 25px;
+  font-size: 18px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.petal {
+  position: fixed;
+  top: -20px;
+  animation: fall 6s linear infinite;
+  font-size: 25px;
+}
+
+@keyframes fall {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(110vh);
+  }
+}
+</style>
+
+<script>
+let reasons = [
+  "💗 I love how gentle u are with me.",
+  "💗 I love how safe u make me feel.",
+  "💗 I love ur gorgeous eyes.",
+  "💗 I love you."
+];
+
+let number = 0;
+
+function showReason() {
+  document.getElementById("reason").style.display = "block";
+  document.getElementById("reason").innerHTML = reasons[number];
+  number++;
+
+  if (number >= reasons.length) {
+    number = 0;
+  }
+}
+</script>
+
+</head>
+
+<body>
+
+<h1>🌸 Hi my love 🥹</h1>
+
+<div class="card">
+
+<div class="puppy" onclick="showReason()">🐶</div>
+
+<p>
+I tried making u something else too
+</p>
+
+<p>
+I hope u enjoy cutie
+</p>
+
+<div id="reason" class="reason"></div>
+
+</div>
+
+
+<div class="card">
+
+<h2>🌱 How it started</h2>
+
+<p>
+The day I met u on MM2 was the best day of my life.
+</p>
+
+<p>
+I’m so glad we talked about our cats.
+I never knew that one conversation would become something
+so special.
+</p>
+
+<p>
+Eventually, we fell in love with each other.
+</p>
+
+<p>
+I’m so grateful that I met u. 💗
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h2>🌸 Things I love about you (everything) </h2>
+
+<p>
+There are so many things I love about you.
+</p>
+
+<p>
+🌸 Your kindness
+<br>
+🌸 Your generosity
+<br>
+🌸 Your sweet heart
+<br>
+🌸 Your little giggle that makes me smile
+<br>
+🌸 The way you make me feel loved and cared for
+</p>
+
+<p>
+I love every part of you, my sweet boy. 🐶💕
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h2>✈️ Our lil future </h2>
+
+<p>
+One day, we’re going to visit Japan together. 🌸
+</p>
+
+<p>
+We’ll explore everything, buy 100 figures and mangas ,
+try out the food, learn the culture, and vidit all the places we’ve dreamed of seeing.
+</p>
+
+<p>
+I can’t wait to make those memories with u,
+watch u achieve ur dream goals,
+and travel the world with u, my love. 💗
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h2>🐶 A little reminder</h2>
+
+<p>
+Click the puppy whenever you need a reminder of how loved you are. 🌸
+</p>
+
+</div>
+
+
+<div class="petal">🌸</div>
+<div class="petal" style="left:25%;animation-delay:2s;">🌸</div>
+<div class="petal" style="left:50%;animation-delay:4s;">🌸</div>
+<div class="petal" style="left:80%;animation-delay:1s;">🌸</div>
+
+</body>
+</html>
+<script>
+
+let reasons = [
+"💗 I love how gentle u are with me.",
+"💗 I love how safe u make me feel.",
+"💗 I love ur gorgeous eyes.",
+"💗 I love you."
+];
+
+let number = 0;
+
+function showReason() {
+  document.getElementById("reason").innerHTML = reasons[number];
+  document.getElementById("reason").style.display = "block";
+
+  number++;
+
+  if (number >= reasons.length) {
+    number = 0;
+  }
+}
+
+</script>
